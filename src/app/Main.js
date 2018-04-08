@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Boton from '../comunes/Boton';
+import Index from './Index';
 
 const Main = () => (
   <MuiThemeProvider>
-    <Boton />
+      <Index/>
   </MuiThemeProvider>
 );
 
