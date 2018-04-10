@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Text from '../comunes/Text';
 import DatePicker from 'material-ui/DatePicker';
 import Paper from 'material-ui/Paper';
+import RaisedButton from 'material-ui/RaisedButton';
 
+import StepperRegistro from '../StepperRegistro/StepperRegistro';
 class Registro extends Component {
   render() {
     return (
@@ -11,31 +13,9 @@ class Registro extends Component {
         <div>
           <h1>Registro</h1>
         </div>
-            <Paper style={estilo.estilo} zDepth={2}>
-              <div style= {{ height:10 }}>
-                <h1></h1>
-              </div>
-              <div
-            style = {{
-            marginLeft:50, marginTop: 30 }}  >
-
-                <Text
-                etiqueta = "Nombre"/><br/>
-                <p3>Fecha de inicio</p3>
-                <DatePicker hintText="00-00-00" /><br/>
-                <p3>Fecha de termino</p3>
-                <DatePicker hintText="00-00-00" />
-
-                <Text
-                etiqueta = "Correo"
-                /><br/>
-
-                <Text
-                etiqueta = "Dirección"
-                /><br/>
-                </div>
-
-              </Paper>
+          <div>
+            <StepperRegistro/>
+          </div>
             </div>
 
             <div style= {{ marginLeft: 50 }}>
@@ -43,6 +23,49 @@ class Registro extends Component {
               <h1>Evidencias</h1>
             </div>
               <Paper style={estilo.evidencias} zDepth={2}>
+              <div style = {{ flexDirection: 'row' }}>
+              <div style= {{ height:20 }}>
+                <h1></h1>
+              </div>
+
+              <div style = {{ flexDirection: 'row', display: 'flex' }} >
+              <div style = {{ marginLeft: 50 }}>
+                <Paper style = {{ width: 100, height: 100,  }}>
+                </Paper>
+              </div>
+              <div style = {{ marginLeft: 50 }}>
+                <Paper style = {{ width: 100, height: 100,  }}>
+                </Paper>
+              </div>
+              </div>
+
+              <div style = {{ flexDirection: 'row', display: 'flex', marginTop: 10 }} >
+              <div style = {{ marginLeft: 50 }}>
+                <Paper style = {{ width: 100, height: 100,  }}>
+                </Paper>
+              </div>
+              <div style = {{ marginLeft: 50 }}>
+                <Paper style = {{ width: 100, height: 100,  }}>
+                </Paper>
+              </div>
+              </div>
+
+              <div style = {{ flexDirection: 'row', display: 'flex', marginTop: 10 }} >
+              <div style = {{ marginLeft: 50 }}>
+                <Paper style = {{ width: 100, height: 100,  }}>
+                </Paper>
+              </div>
+              <div style = {{ marginLeft: 50 }}>
+                <Paper style = {{ width: 100, height: 100,  }}>
+                </Paper>
+              </div>
+              </div>
+
+                <div style = {{ marginLeft: 200, marginTop: 80 }}>
+                <RaisedButton
+                label= "Aceptar"/>
+                </div>
+              </div>
               </Paper>
             </div>
 
@@ -55,13 +78,14 @@ class Registro extends Component {
 const estilo = {
   estilo: {
     alignItems: 'column',
-      height: 500,
-      width: 400,
+      height: 480,
+      width: 500,
       margin: 1
     },
   evidencias: {
     alignItems: 'column',
-      height: 500,
+    flexDirection: 'row',
+      height: 480,
       width: 350,
       margin: 1
       }

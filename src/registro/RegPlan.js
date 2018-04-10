@@ -4,14 +4,11 @@ import DatePicker from 'material-ui/DatePicker';
 import Paper from 'material-ui/Paper';
 import RaisedButton from 'material-ui/RaisedButton';
 
-class RegistroUsuario extends Component {
+class RegPlan extends Component {
   render() {
     return (
       <div style= {{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
         <div style= {{ flexDirection: 'column'}}>
-        <div style = {{ display: 'flex', justifyContent: 'center' }}>
-          <h2>Usuario Nuevo</h2>
-        </div>
             <Paper style={estilo.estilo} zDepth={2}>
               <div style= {{ height:10 }}>
                 <h1></h1>
@@ -21,18 +18,26 @@ class RegistroUsuario extends Component {
             marginLeft:50, marginTop: 30 }}  >
                 <div>
 
-                <Text
-                etiqueta = "Nombre"/><br/>
+                  <Text
+                  etiqueta = "Nombre"/><br/>
+                  <p3>Fecha de inicio</p3>
+                  <DatePicker hintText="00-00-00" /><br/>
+                  <p3>Fecha de termino</p3>
+                  <DatePicker hintText="00-00-00" />
 
-                <Text
-                etiqueta = "Apellido paterno"
-                /><br/>
+                  <Text
+                  etiqueta = "Correo"
+                  /><br/>
 
-                <Text
-                etiqueta = "Apellido materno"
-                /><br/>
+                  <Text
+                  etiqueta = "Dirección"
+                  /><br/>
+                  </div>
+
                 </div>
                 </div>
+
+
               </Paper>
             </div>
         </div>
@@ -50,4 +55,4 @@ const estilo = {
     }
 };
 
-export default RegistroUsuario;
+export default RegPlan;

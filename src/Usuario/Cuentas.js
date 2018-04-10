@@ -48,7 +48,7 @@ const estilo = {
     justifyContent: 'center',
     alignItems: 'column',
       height: 300,
-      width: 700,
+      width: 600,
       margin: 1
     }
 };

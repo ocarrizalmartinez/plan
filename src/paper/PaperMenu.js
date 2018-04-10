@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Paper from 'material-ui/Paper';
-import Menu1 from '../menu/Menu';
+import Menu1 from './menu/Menu';
 class PaperMenu extends Component {
   render() {
     return (
       <div style = { estilo.item }>
-        <Menu1/>       
+        <Menu1/>
       </div>
 
     );
