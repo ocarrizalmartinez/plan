@@ -9,9 +9,7 @@ class Registro extends Component {
     return (
       <div style= {{ flexDirection: 'row', display: 'flex', justifyContent: 'center' }}>
         <div style= {{ flexDirection: 'column'}}>
-        <div style = {{ display: 'flex', justifyContent: 'center' }}>
-          <h2>Registro</h2>
-        </div>
+  
             <Paper style={estilo.estilo} zDepth={2}>
               <div style= {{ height:10 }}>
                 <h1></h1>
